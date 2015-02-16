@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Centipede", "Centipede\Centipede.vcxproj", "{6E34728E-EF41-4440-A617-0A27DAFC8095}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E34728E-EF41-4440-A617-0A27DAFC8095}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6E34728E-EF41-4440-A617-0A27DAFC8095}.Debug|Win32.Build.0 = Debug|Win32
+		{6E34728E-EF41-4440-A617-0A27DAFC8095}.Release|Win32.ActiveCfg = Release|Win32
+		{6E34728E-EF41-4440-A617-0A27DAFC8095}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

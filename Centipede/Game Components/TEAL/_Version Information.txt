@@ -1,0 +1,80 @@
+TEAL: Time, Event and Asset Layer
+Simple tools for basic game flow and asset management. 
+Relies heavily on SFML 2.0 library (http://www.sfml-dev.org/)
+Copyright: Andre Berthiaume, 2012
+
+----------------------------
+Version 0.5, June 2013
+
+Scene
+	- DeleteOneGameObject: changed the code to call the ManagedDeleteOperation if necessary 
+	- FinalDeleteOrRelease: Added for consistency
+
+----------------------------
+Version 0.4, May 2013
+
+AlarmEventTimeline
+AlarmManager
+GameObject
+	- Fixed a bug when resetting an alarm that is already running
+	- Added AlarmCancel to stop an alarm completely without triggering the associated event
+
+AnimaedSprite
+	- Fixed a bug in SetFrame which always resetted to the first animation frame
+
+----------------------------
+Version 0.3, April 2013
+
+GlobalDefinitions
+InputEventManager
+GameObject	
+	- Added structure for WindowClosed and TextEntered events
+
+GameClock
+	- Move game time control to GameClock and added freeze-frame and step-frame modes
+
+Game
+	- Modfied to use GameClock
+
+----------------------------
+Version 0.2, March 2013
+
+ResourceManader
+	- GetTextureBitmap now return returns reference
+
+GameObject
+	- Added support for factory: SetExternalManagement and RegisterToCurrentScene
+
+CollisionGrid
+	- Fixed initialization issues (release mode)
+
+ResourceManager
+	- Added Font collection and related methods
+
+----------------------------
+Version 0.1, June 2012
+
+Initial version includes:
+
+Game
+	- main game loop
+
+ResourceManager:
+	- currently only texture and images
+
+WindowManager:
+	- Basic setup and a link to the main window.
+	- Views are planned in future releases
+
+AlarmManager (supported by AlarmEventTimeline)
+	- Game clock and GameObjects alarm events
+
+SceneManager (Supported by Scene)
+	- Controls which scene is currently active
+	- Future version will include that ability to store/retrieve scenes
+
+Scene
+	- Manages the GameObjects currently active
+
+GameObject
+	- Main components of game. 
